@@ -1,0 +1,13 @@
+<div>
+    <h1>
+        Cat-Gif
+    </h1>
+<img [src]="catgif"
+    alt ="cat gif" />
+<dog-details name ="YOOOOOOOOOOOOOOOOOOo" ></dog-details>  
+<dog-details [(name)] ="dog1.name" [(color)]="dog1.color" 
+(nameChange)="changeDog1($event)"
+(bark)="dobark(dog1.name)"></dog-details>  
+<dog-details [name] ="dog2.name" [color]="dog2.color" (nameChange)="changeDog2($event)"
+(bark)="dobark(dog2.name)"></dog-details>  
+</div>
